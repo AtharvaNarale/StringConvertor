@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+
+    <style>
+        .textbox
+        {
+            position: fixed;
+            top: 0px;
+            left:0px;
+        height: 100vh;
+     width: 100%;
+    background-image: linear-gradient(to right, rgb(69, 69, 152) , rgb(163, 95, 176) );   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.textbox div
+{
+    height: 300px;
+    width: 300px;
+    background-color: wheat;
+    padding: 30px;
+}
+    </style>
+</head>
+<body>
+    <marquee>
+    <h1>String Convertor for Uppercase and lowerCase</h1>  
+    </marquee>
+
+<div class="textbox">
+    <div align="center">
+        <form action="">
+            <label for=""><h3>Enter a Text</h3></label>
+
+            <textarea name="Text" id="userText" cols="40" rows="10" onchange="fetchData()">
+            </textarea>
+            <h3>
+        <button type="button" onclick="upperCase()">UPPERCASE</button>
+        <button type="button" onclick="lowercase()">LOWERCASE</button>
+        </h3>
+        
+        
+    </form>
+    </div>
+</div>
+
+<script>
+    function fetchData()
+    {
+    let userText=document.getElementById("userText");
+    let word=document.getElementById("words");
+    words.innerHTML='0';
+    let strlength=userText.value.length;
+    character.innerHTML=strlength
+}
+function upperCase()
+{
+    userText.value=userText.value.toUpperCase();
+
+}
+function lowerCase()
+{
+    userText.value=userText.value.toLowerCase();
+    
+}
+</script>
+    
+
+
+</body>
+</html>
